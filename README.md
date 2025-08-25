@@ -94,4 +94,35 @@
 
 - **Admin Dashboard (Optional Extension)**  
   Administrators can oversee users, properties, and bookings. This ensures proper monitoring, moderation, and management of the platform.
+  
+## API Security
+
+Ensuring security is a critical part of this project. The following measures will be implemented to protect users, properties, and financial transactions:
+
+- **Authentication**  
+  Only registered users can access protected endpoints using secure methods (e.g., JWT or OAuth2). This prevents unauthorized access and ensures that only verified users can interact with the platform.
+
+- **Authorization**  
+  Role-based access control (RBAC) ensures that users can only perform actions that match their role. For example, hosts can list properties, while guests can only book properties. This prevents abuse and unauthorized operations.
+
+- **Data Encryption**  
+  Sensitive information such as passwords and payment details will be encrypted both in transit (via HTTPS/TLS) and at rest. This is essential to protect user credentials and financial data from potential breaches.
+
+- **Rate Limiting & Throttling**  
+  API requests will be rate-limited to prevent abuse, such as brute-force login attempts or denial-of-service attacks. This helps maintain availability and performance of the platform.
+
+- **Input Validation & Sanitization**  
+  All incoming data will be validated and sanitized to prevent SQL injection, XSS, and other malicious attacks. This ensures that only clean and safe data enters the system.
+
+- **Secure Payments**  
+  Payment transactions will be processed through a trusted third-party provider (e.g., Stripe/PayPal). This ensures compliance with security standards and protects sensitive payment information.
+
+---
+
+### Why Security is Crucial
+
+- **Protecting User Data**: Personal information (names, emails, passwords) must remain private and secure.  
+- **Securing Payments**: Users must trust the platform to handle financial transactions safely.  
+- **Preventing Unauthorized Access**: Ensures that malicious actors cannot manipulate or steal data.  
+- **Maintaining Platform Reliability**: Strong security prevents downtime from attacks, ensuring a reliable service for all users.
 

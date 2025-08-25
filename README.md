@@ -126,3 +126,20 @@ Ensuring security is a critical part of this project. The following measures wil
 - **Preventing Unauthorized Access**: Ensures that malicious actors cannot manipulate or steal data.  
 - **Maintaining Platform Reliability**: Strong security prevents downtime from attacks, ensuring a reliable service for all users.
 
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying the application.  
+They ensure that every change pushed to the repository is verified, tested, and deployed consistently, reducing errors and speeding up development.
+
+### Why CI/CD is Important
+- **Consistency**: Automates testing and deployment, reducing human error.  
+- **Faster Development**: Allows developers to ship features and bug fixes quickly.  
+- **Reliability**: Ensures that every build passes tests before going live.  
+- **Scalability**: Supports continuous updates as the project grows.  
+
+### Tools Used
+- **GitHub Actions**: Automates testing, builds, and deployment workflows directly from the GitHub repository.  
+- **Docker**: Containerizes the application, ensuring consistent environments across development, staging, and production.  
+- **Nginx**: Used as a reverse proxy for handling traffic and load balancing in production deployments.  
+- **Cloud Provider (AWS/Heroku/DigitalOcean)**: Hosts the deployed application for end users.  
+

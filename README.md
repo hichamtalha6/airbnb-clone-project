@@ -71,3 +71,27 @@
 - **Payments**
   - Fields: `id`, `booking_id`, `amount`, `payment_method`, `payment_date`, `status`
   - Description: Represents a transaction linked to a booking. Each payment is tied to one booking.
+
+## Feature Breakdown
+
+- **User Management**  
+  Allows users to register, log in, and manage their profiles. Supports both roles: hosts (who list properties) and guests (who book properties), with secure authentication and authorization.
+
+- **Property Management**  
+  Hosts can create, update, and manage property listings with details such as title, description, location, price, and availability. This enables a wide variety of accommodations to be displayed on the platform.
+
+- **Booking System**  
+  Guests can search for available properties, make reservations for specific dates, and track their bookings. The system ensures that bookings are validated to avoid double reservations.
+
+- **Payment Integration**  
+  Provides a secure way for guests to pay for their bookings. Handles different payment statuses (e.g., pending, completed, failed) and ensures financial transactions are safely processed.
+
+- **Review & Rating System**  
+  Guests can leave reviews and ratings for properties they have stayed at. This helps build trust and transparency on the platform by allowing future guests to make informed decisions.
+
+- **Search & Filtering**  
+  Users can search for properties based on location, price range, date availability, and other filters. This improves the user experience by making it easier to find suitable accommodations.
+
+- **Admin Dashboard (Optional Extension)**  
+  Administrators can oversee users, properties, and bookings. This ensures proper monitoring, moderation, and management of the platform.
+

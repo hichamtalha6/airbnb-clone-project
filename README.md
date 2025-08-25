@@ -22,3 +22,27 @@
 
 - **UI/UX Designer**  
   Creates wireframes, mockups, and prototypes, defines style guides, and ensures the product has an engaging and user-friendly design.
+
+
+## Technology Stack
+
+- **Django**  
+  A high-level Python web framework used to build the backend of the application, manage business logic, and provide RESTful/GraphQL APIs.
+
+- **PostgreSQL**  
+  A powerful open-source relational database system used to store and manage application data securely and efficiently.
+
+- **GraphQL**  
+  A query language for APIs that allows clients to request exactly the data they need, reducing over-fetching and improving performance.
+
+- **Docker**  
+  Used to containerize the application and its dependencies, ensuring consistent environments across development, testing, and production.
+
+- **Nginx**  
+  A web server and reverse proxy used to serve static files, handle load balancing, and route requests to the application backend.
+
+- **Redis**  
+  An in-memory data structure store used for caching and session management to speed up response times.
+
+- **GitHub Actions**  
+  Provides CI/CD pipelines to automate testing, building, and deployment of the application.

@@ -46,3 +46,28 @@
 
 - **GitHub Actions**  
   Provides CI/CD pipelines to automate testing, building, and deployment of the application.
+
+
+## Database Design
+
+### Key Entities
+
+- **Users**
+  - Fields: `id`, `name`, `email`, `password_hash`, `role` (guest or host), `created_at`
+  - Description: Represents both guests and hosts. Hosts can list properties, while guests can book properties and leave reviews.
+
+- **Properties**
+  - Fields: `id`, `host_id`, `title`, `description`, `location`, `price_per_night`, `created_at`
+  - Description: A property listed by a host. Each property belongs to a user (the host).
+
+- **Bookings**
+  - Fields: `id`, `user_id`, `property_id`, `start_date`, `end_date`, `status`
+  - Description: A reservation made by a guest for a property. Each booking belongs to one guest (user) and one property.
+
+- **Reviews**
+  - Fields: `id`, `user_id`, `property_id`, `rating`, `comment`, `created_at`
+  - Description: Guests can leave reviews for properties they have booked. Each review belongs to a user and a property.
+
+- **Payments**
+  - Fields: `id`, `booking_id`, `amount`, `payment_method`, `payment_date`, `status`
+  - Description: Represents a transaction linked to a booking. Each payment is tied to one booking.
